@@ -1,0 +1,474 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Technical-Quiz</title>
+<link rel="stylesheet" href="css\style_test.css">
+<script type="text/javascript" src="js\jquery.min.js"></script>
+<script type="text/javascript" src="js\tech-CommonJS.js"></script>
+
+<link rel="stylesheet" href="css\upskilly-common.css"> 
+<link rel="stylesheet" href="css\upskilly-bootstrap.min.css">
+      
+
+</head>
+<nav class="navbar navbar-chalk" id="top_banner">
+        <div class="nav_container">
+        <a class="logo logo_enterprise pull-left">
+            <img src="images\footerlogo.png">
+        </a>
+            <div class="controls_wrapper">    
+                
+                <a class="fc4" href="index.html">Log Out</a>
+            </div>
+        </div>
+    </nav>
+
+<div id="container" style="padding-left:25%">
+
+    <body class="home page page-id-425 page-template page-template-page-blocks-php page-builder right-sidebar full right-sidebar">
+    
+        <div id="topbarcheck" style="height:0px; width:0px"></div>
+        <div class="main-wrap">
+            <div class="main cf" style="margin-top:0px!important;">
+                <div class="row" style="margin:0px!important">
+                    <div class="col-9 main-content" style="padding-right:10px; padding-left:10px">
+        <!--////////////////////////////////////////////////Middle part start/////////// -->
+                        <div style="text-align:justify;">
+                            <div class="paperHeading">PAPER : Technical</div>
+		                    <div id="above">
+			                    <span class="textwelcome" style="float:right"><span id="remaining_time"></span> </span>
+	  		                    <span class="textwelcome" style="float:left"> </span>	  
+  		                        <div style="clear:both"></div>
+		                    </div>
+                        </div>
+
+                        <form name="quizForm" onsubmit="return submitAns()">
+
+                            <!--q1-->
+                            <div class="questionDisplay" id="question1" >                                                            
+                                <div class="sectionQuestion"> <span class="question">1: Which of these operators is used to allocate memory to array variable in Java?</span>
+                                    <div style="clear:both"></div>
+                                </div>
+                                <div class="questionDetails">
+                                    <div>
+                                        <div style='padding:3px'></div>
+                                        <div style="clear:both"></div>
+                                        <div class="questionOptions" >
+                                            <table  class="optionTable">
+                                                <tr>
+                                                <td style="width:10px; vertical-align:top"></td>
+                                                <td style="width:10px; vertical-align:top"><input type="radio" id="optionAttrib1_1" name="optionAttribName1" value="1"    style="margin-top:3px" /></td>
+                                                <td ><label for="optionAttrib1_1">&nbsp;&nbsp;&nbsp;</label></td>
+                                                </tr>
+                                                <tr >
+                                                <td style="vertical-align:top"></td>
+                                                <td style="vertical-align:top"><input type="radio" id="optionAttrib1_2" name="optionAttribName1" value="2"  style="margin-top:3px" /></td>
+                                                <td style="vertical-align:top"><label for="optionAttrib1_2">&nbsp;&nbsp;&nbsp;</label></td>
+                                                </tr>
+                                                <tr>
+                                                <td style="vertical-align:top"></td>
+                                                <td style="vertical-align:top"><input type="radio" id="optionAttrib1_3" name="optionAttribName1" value="3"  style="margin-top:3px" /></td>
+                                                <td style="vertical-align:top"><label for="optionAttrib1_3">&nbsp;&nbsp;new&nbsp;</label></td>                                               
+                                                </tr>
+                                                <tr>
+                                                <td style="vertical-align:top"></td>
+                                                <td style="vertical-align:top"><input type="radio" id="optionAttrib1_4" name="optionAttribName1" value="4"  style="margin-top:3px" /></td>
+                                                <td style="vertical-align:top"><label for="optionAttrib1_4">&nbsp;&nbsp;</label></td>  
+                                                </tr>
+                                            </table>
+                                        </div>
+                                    </div>
+                                    <div style="clear:both"></div>
+                                </div>
+                                
+                                
+                            </div>
+                            
+
+                            <!--q2-->
+                            <div class="questionDisplay" id="question2"   >                            
+                                <div class="sectionQuestion"> <span class="question">2: Which of these is an incorrect array declaration?</span>
+                                    <div style="clear:both"></div>
+                                </div>
+                                <div class="questionDetails">
+                                    <div>
+                                        <div style='padding:3px'></div>                            
+                                        <div style="clear:both"></div>
+                                        <div class="questionOptions">
+                                            <table  class="optionTable">
+                                                <tr>
+                                                <td style="width:10px; vertical-align:top"></td>
+                                                <td style="width:10px; vertical-align:top"><input type="radio" id="optionAttrib2_1" name="optionAttribName2" value="1"  style="margin-top:3px" /></td>
+                                                <td ><label for="optionAttrib2_1">&nbsp;&nbsp;&nbsp;&nbsp;</label></td>
+                                                </tr>
+                                                <tr>
+                                                <td style="vertical-align:top"></td>
+                                                <td style="vertical-align:top"><input type="radio" id="optionAttrib2_2" name="optionAttribName2" value="2"  style="margin-top:3px" /></td>
+                                                <td style="vertical-align:top"><label for="optionAttrib2_2">&nbsp;&nbsp;&nbsp;</label></td>
+                                                </tr>
+                                                <tr>
+                                                <td style="vertical-align:top"></td>
+                                                <td style="vertical-align:top"><input type="radio" id="optionAttrib2_3" name="optionAttribName2" value="3"  style="margin-top:3px" /></td>
+                                                <td style="vertical-align:top"><label for="optionAttrib2_3">&nbsp;&nbsp;&nbsp;</label></td>                  
+                                                </tr>
+                                                <tr>
+                                                <td style="vertical-align:top"></td>
+                                                <td style="vertical-align:top"><input type="radio" id="optionAttrib2_4" name="optionAttribName2" value="4"  style="margin-top:3px" /></td>
+                                                <td style="vertical-align:top"><label for="optionAttrib2_4">&nbsp;&nbsp;int arr[] = int [5] new</label>
+                                                </td>
+                                                </tr>
+                                            </table>
+                                        </div>
+                                    </div>
+                                    <div style="clear:both"></div>
+                                </div>
+                                
+                            </div>
+
+
+                            <!--q3-->
+                            <div class="questionDisplay" id="question3"  >
+                                
+                                <div class="sectionQuestion"> <span class="question">3: Which of these is an incorrect Statement?</span> 
+                                    <div style="clear:both"></div>
+                                </div>
+                                <div class="questionDetails">
+                                    <div>
+                                        <div style='padding:3px'></div>                            
+                                        <div style="clear:both"></div>
+                                        <div class="questionOptions">
+                                            <table  class="optionTable">
+                                                <tr>
+                                                <td style="width:10px; vertical-align:top"></td>
+                                                <td style="width:10px; vertical-align:top"><input type="radio" id="optionAttrib3_1" name="optionAttribName3" value="1"  style="margin-top:3px" /></td>
+                                                <td ><label for="optionAttrib3_1">&nbsp;&nbsp;It is necessary to use new operator to initialize an array&nbsp;</label></td>
+                                                </tr>
+                                                <tr>
+                                                <td style="vertical-align:top"></td>
+                                                <td style="vertical-align:top"><input type="radio" id="optionAttrib3_2" name="optionAttribName3" value="2"  style="margin-top:3px" /></td>
+                                                <td style="vertical-align:top"><label for="optionAttrib3_2">&nbsp;&nbsp;&nbsp;</label></td>
+                                                </tr>
+                                                <tr>
+                                                <td style="vertical-align:top"></td>
+                                                <td style="vertical-align:top"><input type="radio" id="optionAttrib3_3" name="optionAttribName3" value="3"  style="margin-top:3px" /></td>
+                                                <td style="vertical-align:top"><label for="optionAttrib3_3">&nbsp;&nbsp;&nbsp;</label></td>
+                                                </tr>
+                                                <tr>
+                                                <td style="vertical-align:top"></td>
+                                                <td style="vertical-align:top"><input type="radio" id="optionAttrib3_4" name="optionAttribName3" value="4"  style="margin-top:3px" /></td>
+                                                <td style="vertical-align:top"><label for="optionAttrib3_4">&nbsp;&nbsp;</label></td> 
+                                                </tr>
+                                            </table>
+                                        </div>
+                                    </div>
+                                    <div style="clear:both"></div>
+                                </div>
+                                
+                            </div>
+
+                            <!--q4-->
+                            <div class="questionDisplay" id="question4"   >
+                                
+                                <div class="sectionQuestion"> <span class="question">4: Which of these is necessary to specify at time of array initialization?</span>
+                                    <div style="clear:both"></div>
+                                </div>
+                                <div class="questionDetails">
+                                    <div>
+                                        <div style='padding:3px'></div>                            
+                                        <div style="clear:both"></div>
+                                        <div class="questionOptions">
+                                            <table  class="optionTable">
+                                                <tr>
+                                                <td style="width:10px; vertical-align:top"></td>
+                                                <td style="width:10px; vertical-align:top"><input type="radio" id="optionAttrib4_1" name="optionAttribName4" value="1"  style="margin-top:3px" /></td>
+                                                <td ><label for="optionAttrib4_1">&nbsp;&nbsp;Row&nbsp;</label></td>
+                                                </tr>
+                                                <tr>
+                                                <td style="vertical-align:top"></td>
+                                                <td style="vertical-align:top"><input type="radio" id="optionAttrib4_2" name="optionAttribName4" value="2"  style="margin-top:3px" /></td>
+                                                <td style="vertical-align:top"><label for="optionAttrib4_2">&nbsp;&nbsp;&nbsp;</label></td>
+                                                </tr>
+                                                <tr>
+                                                <td style="vertical-align:top"></td>
+                                                <td style="vertical-align:top"><input type="radio" id="optionAttrib4_3" name="optionAttribName4" value="3"  style="margin-top:3px" /></td>
+                                                <td style="vertical-align:top"><label for="optionAttrib4_3">&nbsp;&nbsp;&nbsp;</label></td> 
+                                                </tr>
+                                                <tr>
+                                                <td style="vertical-align:top"></td>
+                                                <td style="vertical-align:top"><input type="radio" id="optionAttrib4_4" name="optionAttribName4" value="4"  style="margin-top:3px" /></td>
+                                                <td style="vertical-align:top"><label for="optionAttrib4_4">&nbsp;&nbsp;</label></td>
+                                                </tr>
+                                            </table>
+                                        </div>
+                                    </div>
+                                    <div style="clear:both"></div>
+                                </div>
+                                
+                            </div>
+                            
+                            
+              
+                            <!--q5-->
+                            <div class="questionDisplay" id="question5"   >
+                                
+                                <div class="sectionQuestion"> <span class="question">5: Literals in java must be appended by which of these?</span>
+                                    <div style="clear:both"></div>
+                                </div>
+                                <div class="questionDetails">
+                                    <div>
+                                        <div style='padding:3px'></div>                            
+                                        <div style="clear:both"></div>
+                                        <div class="questionOptions">
+                                            <table  class="optionTable">
+                                                <tr>
+                                                <td style="width:10px; vertical-align:top"></td>
+                                                <td style="width:10px; vertical-align:top"><input type="radio" id="optionAttrib5_1" name="optionAttribName5" value="1"  style="margin-top:3px" /></td>
+                                                <td ><label for="optionAttrib5_1">&nbsp;&nbsp;&nbsp;</label></td>
+                                                </tr>
+                                                <tr>
+                                                <td style="vertical-align:top"></td>
+                                                <td style="vertical-align:top"><input type="radio" id="optionAttrib5_2" name="optionAttribName5" value="2"  style="margin-top:3px" /></td>
+                                                <td style="vertical-align:top"><label for="optionAttrib5_2">&nbsp;&nbsp;&nbsp;</label></td>
+                                                </tr>
+                                                <tr>
+                                                <td style="vertical-align:top"></td>
+                                                <td style="vertical-align:top"><input type="radio" id="optionAttrib5_3" name="optionAttribName5" value="3"  style="margin-top:3px" /></td>
+                                                <td style="vertical-align:top"><label for="optionAttrib5_3">&nbsp;&nbsp;&nbsp;</label></td> 
+                                                </tr>
+                                                <tr>
+                                                <td style="vertical-align:top"></td>
+                                                <td style="vertical-align:top"><input type="radio" id="optionAttrib5_4" name="optionAttribName5" value="4"  style="margin-top:3px" /></td>
+                                                <td style="vertical-align:top"><label for="optionAttrib5_4">&nbsp;&nbsp;L and I</label></td>
+                                                </tr>
+                                            </table>
+                                        </div>
+                                    </div>
+                                    <div style="clear:both"></div>
+                                </div>
+                                
+                            </div>
+                            
+                            <!-- q6 -->							
+                            <div class="questionDisplay" id="question6" >
+                                
+                                <div class="sectionQuestion"> <span class="question">6: Which of these can not be used for a variable name in Java?</span>
+                                    <div style="clear:both"></div>
+                                </div>
+                                <div class="questionDetails">
+                                    <div>
+                                        <div style='padding:3px'></div>                            
+                                        <div style="clear:both"></div>
+                                        <div class="questionOptions">
+                                            <table  class="optionTable">
+                                                <tr>
+                                                <td style="width:10px; vertical-align:top"></td>
+                                                <td style="width:10px; vertical-align:top"><input type="radio" id="optionAttrib6_1" name="optionAttribName6" value="1"  style="margin-top:3px" /></td>
+                                                <td ><label for="optionAttrib6_1">&nbsp;&nbsp;&nbsp;</label></td>
+                                                </tr>
+                                                <tr>
+                                                <td style="vertical-align:top"></td>
+                                                <td style="vertical-align:top"><input type="radio" id="optionAttrib6_2" name="optionAttribName6" value="2"  style="margin-top:3px" /></td>
+                                                <td style="vertical-align:top"><label for="optionAttrib6_2">&nbsp;&nbsp;keyword&nbsp;</label></td>
+                                                </tr>
+                                                <tr>
+                                                <td style="vertical-align:top"></td>
+                                                <td style="vertical-align:top"><input type="radio" id="optionAttrib6_3" name="optionAttribName6" value="3"  style="margin-top:3px" /></td>
+                                                <td style="vertical-align:top"><label for="optionAttrib6_3">&nbsp;&nbsp;&nbsp;</label></td> 
+                                                </tr>
+                                                <tr>
+                                                <td style="vertical-align:top"></td>
+                                                <td style="vertical-align:top"><input type="radio" id="optionAttrib6_4" name="optionAttribName6" value="4"  style="margin-top:3px" /></td>
+                                                <td style="vertical-align:top"><label for="optionAttrib6_4">&nbsp;&nbsp;</label></td>
+                                                </tr>
+                                            </table>
+                                        </div>
+                                    </div>
+                                    <div style="clear:both"></div>
+                                </div>
+                                
+                            </div>
+                            
+                            <!-- q7 -->                       
+                            <div class="questionDisplay" id="question7"  >
+                                
+                                <div class="sectionQuestion"> <span class="question">7: Which of these selection statements test only for equality?</span>
+                                    <div style="clear:both"></div>
+                                </div>
+                                <div class="questionDetails">
+                                    <div>
+                                        <div style='padding:3px'></div>                            
+                                        <div style="clear:both"></div>
+                                        <div class="questionOptions">
+                                            <table  class="optionTable">
+                                                <tr>
+                                                <td style="width:10px; vertical-align:top"></td>
+                                                <td style="width:10px; vertical-align:top"><input type="radio" id="optionAttrib7_1" name="optionAttribName7" value="1"  style="margin-top:3px" /></td>
+                                                <td ><label for="optionAttrib7_1">&nbsp;&nbsp;&nbsp;</label></td>
+                                                </tr>
+                                                <tr>
+                                                <td style="vertical-align:top"></td>
+                                                <td style="vertical-align:top"><input type="radio" id="optionAttrib7_2" name="optionAttribName7" value="2"  style="margin-top:3px" /></td>
+                                                <td style="vertical-align:top"><label for="optionAttrib7_2">&nbsp;&nbsp;switch&nbsp;</label></td>
+                                                </tr>
+                                                <tr>
+                                                <td style="vertical-align:top"></td>
+                                                <td style="vertical-align:top"><input type="radio" id="optionAttrib7_3" name="optionAttribName7" value="3"  style="margin-top:3px" /></td>
+                                                <td style="vertical-align:top"><label for="optionAttrib7_3">&nbsp;&nbsp;&nbsp;</label></td> 
+                                                </tr>
+                                                <tr>
+                                                <td style="vertical-align:top"></td>
+                                                <td style="vertical-align:top"><input type="radio" id="optionAttrib7_4" name="optionAttribName7" value="4"  style="margin-top:3px" /></td>
+                                                <td style="vertical-align:top"><label for="optionAttrib7_4">&nbsp;&nbsp;</label></td>
+                                                </tr>
+                                            </table>
+                                        </div>
+                                    </div>
+                                    <div style="clear:both"></div>
+                                </div>
+                                
+                            </div>
+                            
+                            <!-- q8 -->
+                            
+                            <div class="questionDisplay" id="question8"   >
+                                
+                                <div class="sectionQuestion"> <span class="question">8: Which of these are selection statements in Java?</span>
+                                    <div style="clear:both"></div>
+                                </div>
+                                <div class="questionDetails">
+                                    <div>
+                                        <div style='padding:3px'></div>                            
+                                        <div style="clear:both"></div>
+                                        <div class="questionOptions">
+                                            <table  class="optionTable">
+                                                <tr>
+                                                <td style="width:10px; vertical-align:top"></td>
+                                                <td style="width:10px; vertical-align:top"><input type="radio" id="optionAttrib8_1" name="optionAttribName8" value="1"  style="margin-top:3px" /></td>
+                                                <td ><label for="optionAttrib8_1">&nbsp;&nbsp;if()&nbsp;</label></td>
+                                                </tr>
+                                                <tr>
+                                                <td style="vertical-align:top"></td>
+                                                <td style="vertical-align:top"><input type="radio" id="optionAttrib8_2" name="optionAttribName8" value="2"  style="margin-top:3px" /></td>
+                                                <td style="vertical-align:top"><label for="optionAttrib8_2">&nbsp;&nbsp;&nbsp;</label></td>
+                                                </tr>
+                                                <tr>
+                                                <td style="vertical-align:top"></td>
+                                                <td style="vertical-align:top"><input type="radio" id="optionAttrib8_3" name="optionAttribName8" value="3"  style="margin-top:3px" /></td>
+                                                <td style="vertical-align:top"><label for="optionAttrib8_3">&nbsp;&nbsp;&nbsp;</label></td> 
+                                                </tr>
+                                                <tr>
+                                                <td style="vertical-align:top"></td>
+                                                <td style="vertical-align:top"><input type="radio" id="optionAttrib8_4" name="optionAttribName8" value="4"  style="margin-top:3px" /></td>
+                                                <td style="vertical-align:top"><label for="optionAttrib8_4">&nbsp;&nbsp;</label></td>
+                                                </tr>
+                                            </table>
+                                        </div>
+                                    </div>
+                                    <div style="clear:both"></div>
+                                </div>
+                                
+                            </div>
+                            
+                            <!-- q9 -->
+                            <!--q4-->
+                            <div class="questionDisplay" id="question9"   >
+                                
+                                <div class="sectionQuestion"> <span class="question">9: Which of the following loops will execute the body of loop even when condition controlling the loop is initially false?</span>
+                                    <div style="clear:both"></div>
+                                </div>
+                                <div class="questionDetails">
+                                    <div>
+                                        <div style='padding:3px'></div>                            
+                                        <div style="clear:both"></div>
+                                        <div class="questionOptions">
+                                            <table  class="optionTable">
+                                                <tr>
+                                                <td style="width:10px; vertical-align:top"></td>
+                                                <td style="width:10px; vertical-align:top"><input type="radio" id="optionAttrib9_1" name="optionAttribName9" value="1"  style="margin-top:3px" /></td>
+                                                <td ><label for="optionAttrib9_1">&nbsp;&nbsp;do-while&nbsp;</label></td>
+                                                </tr>
+                                                <tr>
+                                                <td style="vertical-align:top"></td>
+                                                <td style="vertical-align:top"><input type="radio" id="optionAttrib9_2" name="optionAttribName9" value="2"  style="margin-top:3px" /></td>
+                                                <td style="vertical-align:top"><label for="optionAttrib9_2">&nbsp;&nbsp;&nbsp;</label></td>
+                                                </tr>
+                                                <tr>
+                                                <td style="vertical-align:top"></td>
+                                                <td style="vertical-align:top"><input type="radio" id="optionAttrib9_3" name="optionAttribName9" value="3"  style="margin-top:3px" /></td>
+                                                <td style="vertical-align:top"><label for="optionAttrib9_3">&nbsp;&nbsp;&nbsp;</label></td> 
+                                                </tr>
+                                                <tr>
+                                                <td style="vertical-align:top"></td>
+                                                <td style="vertical-align:top"><input type="radio" id="optionAttrib9_4" name="optionAttribName9" value="4"  style="margin-top:3px" /></td>
+                                                <td style="vertical-align:top"><label for="optionAttrib9_4">&nbsp;&nbsp;</label></td>
+                                                </tr>
+                                            </table>
+                                        </div>
+                                    </div>
+                                    <div style="clear:both"></div>
+                                </div>
+                               
+                            </div>
+                            
+                            <!-- q10 -->
+                           
+                            
+                            <div class="questionDisplay" id="question10"  >
+                               
+                                <div class="sectionQuestion"> <span class="question">10: Which of the following is used with the switch statement?</span>
+                                    <div style="clear:both"></div>
+                                </div>
+                                <div class="questionDetails">
+                                    <div>
+                                        <div style='padding:3px'></div>                            
+                                        <div style="clear:both"></div>
+                                        <div class="questionOptions">
+                                            <table  class="optionTable">
+                                                <tr>
+                                                <td style="width:10px; vertical-align:top"></td>
+                                                <td style="width:10px; vertical-align:top"><input type="radio" id="optionAttrib10_1" name="optionAttribName10" value="1"  style="margin-top:3px" /></td>
+                                                <td ><label for="optionAttrib10_1">&nbsp;&nbsp;</label></td>
+                                                </tr>
+                                                <tr>
+                                                <td style="vertical-align:top"></td>
+                                                <td style="vertical-align:top"><input type="radio" id="optionAttrib10_2" name="optionAttribName10" value="2"  style="margin-top:3px" /></td>
+                                                <td style="vertical-align:top"><label for="optionAttrib10_2">&nbsp;&nbsp;</label></td>
+                                                </tr>
+                                                <tr>
+                                                <td style="vertical-align:top"></td>
+                                                <td style="vertical-align:top"><input type="radio" id="optionAttrib10_3" name="optionAttribName10" value="3"  style="margin-top:3px" /></td>
+                                                <td style="vertical-align:top"><label for="optionAttrib10_3">&nbsp;&nbsp;break</label></td>
+                                                </tr>
+                                                <tr>
+                                                <td style="vertical-align:top"></td>
+                                                <td style="vertical-align:top"><input type="radio" id="optionAttrib10_4" name="optionAttribName10" value="4"  style="margin-top:3px" /></td>
+                                                <td style="vertical-align:top"><label for="optionAttrib10_4">&nbsp;&nbsp;</label></td>
+                                                </tr>
+                                            </table>
+                                        </div>
+                                    </div>
+                                    <div style="clear:both"></div>
+                                </div>
+                                
+                            </div>
+                            
+                        </form>
+
+                <!--///////////////////////Middle Part Ends////////////////////////////////////-->
+     
+                    </div>
+	                <div>
+                        
+	                </div>
+                </div><!-- .row -->   
+            </div><!-- .main -->   
+        </div><!-- .main-wrap -->
+</div><!--id=container ends-->
+</center>
+</body>
+<center>
+BACK TO <a href="upskilly-user-page.html">DASHBOARD</a>
+</center>
+</html>

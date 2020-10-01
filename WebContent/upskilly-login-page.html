@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="HandheldFriendly" content="True">
+        <meta name="MobileOptimized" content="320">
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
+      
+        <title>Upskilly-Login-page</title>
+
+        <link rel="stylesheet" href="css\upskilly-login.css">       
+        <link rel="stylesheet" href="css\upskilly-common.css"> 
+        <link rel="stylesheet" href="css\upskilly-bootstrap.min.css">
+      
+    </head>
+    
+    <body>
+    
+        <nav class="navbar navbar-chalk" id="top_banner">
+            <div class="nav_container">
+            <a class="logo logo_enterprise pull-left">
+                <img src="images\footerlogo.png">
+            </a>
+                <div class="controls_wrapper">    
+                    <a href="index.html" class="fc4 hidden-xs">Home</a>
+                    <a href="upskilly-login-page.html" class="fc4 hidden-xs">Log in</a>
+                    <a class="fc4" href="upskilly-signup-page.html">Sign up</a>
+                </div>
+            </div>
+        </nav>
+
+        <div class="si_container bc4">
+    
+            <h3>Log in to upskilly</h3>
+            <div>Enter your Details</div>
+    
+            <form action="jsp-login.jsp" method="post">                             
+                <label for="username">Username</label>
+                <br>
+                <input id="username" type="text" name="username">
+                <br>
+                <label for="password">Password</label>
+                <br>
+                <input id="password" type="password" name="password">
+                <br><br>
+                <input id="button" type="submit" value="Login">
+                <br> 
+                <a href="upskilly-forgotpass-page.html" id="a1">Forgot your Password?</a>  
+                <br>
+                Need an account? <a href="upskilly-signup-page.html" id="a2">Sign up now! </a>           
+            </form>           
+        </div>
+</body>
+</html>

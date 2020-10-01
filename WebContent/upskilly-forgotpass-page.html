@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">       
+        <meta name="HandheldFriendly" content="True">
+        <meta name="MobileOptimized" content="320">
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
+        
+        <title>Forgot password page</title>        
+
+        <link rel="stylesheet" href="css/upskilly-forgotpass.css"> 
+        <link rel="stylesheet" href="css/upskilly-common.css"> 
+        <link rel="stylesheet" href="css/upskilly-bootstrap.min.css">
+        
+    </head>  
+    <body>
+
+        <nav class="navbar navbar-chalk" id="top_banner">
+            <div class="nav_container">
+            <a class="logo logo_enterprise pull-left">
+                <img src="images\footerlogo.png">
+            </a>
+                    <div class="controls_wrapper">
+                        <a href="index.html" class="fc4 hidden-xs">Home</a>
+                        <a href="upskilly-login-page.html" class="fc4 hidden-xs">Log in</a>
+                        <a class="fc4" href="upskilly-signup-page.html">Sign up</a>
+                    </div>
+            </div>
+        </nav>
+
+        <div class="s_container bc4"> 
+        
+        	
+          
+            <h3>Forgot your password?</h3>
+            <div>Enter your user account's verified email address and we will send your password.</div>
+            <form id="s_form" name="form1" onclick="mail()" onsubmit="return ValidateEmail(document.form1.mail)"  action="jsp-mailmessage.jsp">
+                
+                <input name="mail" value="" type="mail" class="input_field fs3" placeholder="Enter your email address" autocomplete="off">
+                <br>
+                <input class="btn-1" id="btn-1" type="submit" value="Send password" >
+            	<br><br>
+				<span id="message1" style="color:red; width:300px; height:300px"></span>
+				<span id="message2" style="color:green; width:300px; height:300px"></span>
+				
+            </form>
+        </div>
+       
+        <script>		      
+               
+		   
+		       
+        function mail()
+        {
+        	document.getElementById("message2").innerHTML="CHECK YOUR MAIL";
+        }
+        
+		        function ValidateEmail(inputText)
+		        {
+			        var a=document.form1.mail.value;
+			        var mailformat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+			        if(a.match(mailformat))
+			        {	        
+			        	return true;
+			        }
+			        else
+			        {	        
+				        document.getElementById("message1").innerHTML="INVALID EMAIL";
+				        return false;
+			        }		       
+		        }
+		        
+		        
+		        
+		        
+        </script>
+    </body>
+</html>

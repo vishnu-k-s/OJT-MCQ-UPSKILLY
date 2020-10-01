@@ -1,0 +1,594 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Aptitude-Quiz</title>
+<link rel="stylesheet" href="css\style_test.css">
+<script type="text/javascript" src="js\jquery.min.js"></script>
+<script type="text/javascript" src="js\qa-Common.JS.js"></script>
+
+<link rel="stylesheet" href="css\upskilly-common.css"> 
+<link rel="stylesheet" href="css\upskilly-bootstrap.min.css">
+      
+<script language="JavaScript" type="text/javascript">
+    jQuery(document).ready(function($){
+	    countdown( "remaining_time", 900);
+    });
+</script>
+</script>
+<style>
+#key{
+height:40px;
+width:200px;
+border-radius:10px;
+-webkit-transition: background 1s ease-out;  
+    -moz-transition: background 1s ease-out;  
+    -o-transition: background 1s ease-out;  
+    transition: background 1s ease-out; 
+	
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#f2b07e+0,fbd75c+100 */
+	background: -moz-linear-gradient(left,  #71fa84 0%, #fbd75c 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, right top, color-stop(0%,#f2b07e), color-stop(100%,#fbd75c)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(left,  #71fa84 0%,#fbd75c 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(left,  #71fa84 0%,#fbd75c 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(left,  #71fa84 0%,#fbd75c 100%); /* IE10+ */
+	background: linear-gradient(to right,  #71fa84 0%,#fbd75c 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f2b07e', endColorstr='#fbd75c',GradientType=1 ); /* IE6-9 */
+
+
+}
+#key:hover {
+    background-position:-400px;  
+} 
+</style>
+</head>
+<nav class="navbar navbar-chalk" id="top_banner">
+        <div class="nav_container">
+        <a class="logo logo_enterprise pull-left">
+            <img src="images\footerlogo.png">
+        </a>
+            <div class="controls_wrapper">    
+                
+                <a class="fc4" href="index.html">Log Out</a>
+            </div>
+        </div>
+</nav>
+<div id="container">
+    <body class="home page page-id-425 page-template page-template-page-blocks-php page-builder right-sidebar full right-sidebar">
+        <div id="topbarcheck" style="height:0px; width:0px"></div>
+        <div class="main-wrap">
+            <div class="main cf" style="margin-top:0px!important;">
+                <div class="row" style="margin:0px!important">
+                    <div class="col-9 main-content" style="padding-right:10px; padding-left:10px">
+        <!--////////////////////////////////////////////////Middle part start/////////// -->
+                        <div style="text-align:justify;">
+                            <div class="paperHeading">PAPER : Quantitative Aptitude</div>
+		                    <div id="above">
+			                    <span class="textwelcome" style="float:right">REMAINING TIME <span id="remaining_time"> 100:33 </span> </span>
+	  		                    <span class="textwelcome" style="float:left"></span>	  
+  		                        <div style="clear:both"></div>
+		                    </div>
+                        </div>
+
+                        <form name="quizForm" onsubmit="return submitAns()">
+
+                            <!--q1-->
+                            <div class="questionDisplay" id="question1" >
+                                
+                                <div class="sectionQuestion"> <span class="question">1: Two students appeared at an examination. One of them secured 9 marks more than the other and his marks was 56% of the sum of their marks. The marks obtained by them are:</span>
+                                    <div style="clear:both"></div>
+                                </div>
+                                <div class="questionDetails">
+                                    <div>
+                                        <div style='padding:3px'></div>
+                                        <div style="clear:both"></div>
+                                        <div class="questionOptions">
+                                            <table  class="optionTable">
+                                                <tr>
+                                                <td style="width:10px; vertical-align:top"></td>
+                                                <td style="width:10px; vertical-align:top"><input type="radio" id="optionAttrib1_1" name="optionAttribName1" value="1"    style="margin-top:3px" /></td>
+                                                <td ><label for="optionAttrib1_1">&nbsp;&nbsp;39, 30&nbsp;</label></td>
+                                                </tr>
+                                                <tr>
+                                                <td style="vertical-align:top"></td>
+                                                <td style="vertical-align:top"><input type="radio" id="optionAttrib1_2" name="optionAttribName1" value="2"  style="margin-top:3px" /></td>
+                                                <td style="vertical-align:top"><label for="optionAttrib1_2">&nbsp;&nbsp;41, 32&nbsp;</label></td>
+                                                </tr>
+                                                <tr>
+                                                <td style="vertical-align:top"></td>
+                                                <td style="vertical-align:top"><input type="radio" id="optionAttrib1_3" name="optionAttribName1" value="3"  style="margin-top:3px" /></td>
+                                                <td style="vertical-align:top"><label for="optionAttrib1_3">&nbsp;&nbsp;42, 33&nbsp;</label></td>                                               
+                                                </tr>
+                                                <tr>
+                                                <td style="vertical-align:top"></td>
+                                                <td style="vertical-align:top"><input type="radio" id="optionAttrib1_4" name="optionAttribName1" value="4"  style="margin-top:3px" /></td>
+                                                <td style="vertical-align:top"><label for="optionAttrib1_4">&nbsp;&nbsp;43, 34</label></td>  
+                                                </tr>
+                                            </table>
+                                        </div>
+                                    </div>
+                                    <div style="clear:both"></div>
+                                </div>
+                                <div class="questionFooter">
+                                    <center>                  
+                                    <span class="section_btn sc-button-gray"><a href="javascript:void(0)" onClick="clearResponse(1,1)">Clear Response</a></span>
+                                    <span class=" savenext section_btn section_normal "> <a href="javascript:void(0)" onClick="setAttemptQuestion(1,4,1,1);$('#topbarcheck').focus()">Save & Next</a></span>
+                                    </center>
+                                </div>
+                            </div>
+                            
+
+                            <!--q2-->
+                            <div class="questionDisplay" id="question2"  style="display:none" >
+                                
+                                <div class="sectionQuestion"> <span class="question">2: A fruit seller had some apples. He sells 40% apples and still has 420 apples. Originally, he had:</span>
+                                    <div style="clear:both"></div>
+                                </div>
+                                <div class="questionDetails">
+                                    <div>
+                                        <div style='padding:3px'></div>                            
+                                        <div style="clear:both"></div>
+                                        <div class="questionOptions">
+                                            <table  class="optionTable">
+                                                <tr>
+                                                <td style="width:10px; vertical-align:top"></td>
+                                                <td style="width:10px; vertical-align:top"><input type="radio" id="optionAttrib2_1" name="optionAttribName2" value="1"  style="margin-top:3px" /></td>
+                                                <td ><label for="optionAttrib2_1">&nbsp;&nbsp;588 apples&nbsp;</label></td>
+                                                </tr>
+                                                <tr>
+                                                <td style="vertical-align:top"></td>
+                                                <td style="vertical-align:top"><input type="radio" id="optionAttrib2_2" name="optionAttribName2" value="2"  style="margin-top:3px" /></td>
+                                                <td style="vertical-align:top"><label for="optionAttrib2_2">&nbsp;&nbsp;600 apples&nbsp;</label></td>
+                                                </tr>
+                                                <tr>
+                                                <td style="vertical-align:top"></td>
+                                                <td style="vertical-align:top"><input type="radio" id="optionAttrib2_3" name="optionAttribName2" value="3"  style="margin-top:3px" /></td>
+                                                <td style="vertical-align:top"><label for="optionAttrib2_3">&nbsp;&nbsp;672 apples&nbsp;</label></td>                  
+                                                </tr>
+                                                <tr>
+                                                <td style="vertical-align:top"></td>
+                                                <td style="vertical-align:top"><input type="radio" id="optionAttrib2_4" name="optionAttribName2" value="4"  style="margin-top:3px" /></td>
+                                                <td style="vertical-align:top"><label for="optionAttrib2_4">&nbsp;&nbsp;700 apples</label>
+                                                </td>
+                                                </tr>
+                                            </table>
+                                        </div>
+                                    </div>
+                                    <div style="clear:both"></div>
+                                </div>
+                                <div class="questionFooter">
+                                    <center>
+                                    <span class="section_btn section_normal"><a href="javascript:void(0)" onClick="setAttemptQuestion(2,4,1,-1)">Save & Prev</a></span>
+                                    <span class="section_btn sc-button-gray"><a href="javascript:void(0)" onClick="clearResponse(2,1)">Clear Response</a></span>
+                                    <span class=" savenext section_btn section_normal  "> <a href="javascript:void(0)" onClick="setAttemptQuestion(2,4,1,1);$('#topbarcheck').focus()">Save & Next</a></span>
+                                    </center>
+                                </div>
+                            </div>
+
+
+                            <!--q3-->
+                            <div class="questionDisplay" id="question3"  style="display:none" >
+                                
+                                <div class="sectionQuestion"> <span class="question">3: Which one of the following is not a prime number?</span> 
+                                    <div style="clear:both"></div>
+                                </div>
+                                <div class="questionDetails">
+                                    <div>
+                                        <div style='padding:3px'></div>                            
+                                        <div style="clear:both"></div>
+                                        <div class="questionOptions">
+                                            <table  class="optionTable">
+                                                <tr>
+                                                <td style="width:10px; vertical-align:top"></td>
+                                                <td style="width:10px; vertical-align:top"><input type="radio" id="optionAttrib3_1" name="optionAttribName3" value="1"  style="margin-top:3px" /></td>
+                                                <td ><label for="optionAttrib3_1">&nbsp;&nbsp;31&nbsp;</label></td>
+                                                </tr>
+                                                <tr>
+                                                <td style="vertical-align:top"></td>
+                                                <td style="vertical-align:top"><input type="radio" id="optionAttrib3_2" name="optionAttribName3" value="2"  style="margin-top:3px" /></td>
+                                                <td style="vertical-align:top"><label for="optionAttrib3_2">&nbsp;&nbsp;61&nbsp;</label></td>
+                                                </tr>
+                                                <tr>
+                                                <td style="vertical-align:top"></td>
+                                                <td style="vertical-align:top"><input type="radio" id="optionAttrib3_3" name="optionAttribName3" value="3"  style="margin-top:3px" /></td>
+                                                <td style="vertical-align:top"><label for="optionAttrib3_3">&nbsp;&nbsp;71&nbsp;</label></td>
+                                                </tr>
+                                                <tr>
+                                                <td style="vertical-align:top"></td>
+                                                <td style="vertical-align:top"><input type="radio" id="optionAttrib3_4" name="optionAttribName3" value="4"  style="margin-top:3px" /></td>
+                                                <td style="vertical-align:top"><label for="optionAttrib3_4">&nbsp;&nbsp;91</label></td> 
+                                                </tr>
+                                            </table>
+                                        </div>
+                                    </div>
+                                    <div style="clear:both"></div>
+                                </div>
+                                <div class="questionFooter">
+                                    <center>
+                                    <span class="section_btn section_normal"><a href="javascript:void(0)" onClick="setAttemptQuestion(3,4,1,-1)">Save & Prev</a></span>
+                                    <span class="section_btn sc-button-gray"><a href="javascript:void(0)" onClick="clearResponse(3,1)">Clear Response</a></span>
+                                    <span class=" savenext section_btn section_normal  "> <a href="javascript:void(0)" onClick="setAttemptQuestion(3,4,1,1);$('#topbarcheck').focus()">Save & Next</a></span>
+                                    </center>
+                                </div>
+                            </div>
+
+                            <!--q4-->
+                            <div class="questionDisplay" id="question4"  style="display:none" >
+                                
+                                <div class="sectionQuestion"> <span class="question">4: 1397 x 1397 = ?</span>
+                                    <div style="clear:both"></div>
+                                </div>
+                                <div class="questionDetails">
+                                    <div>
+                                        <div style='padding:3px'></div>                            
+                                        <div style="clear:both"></div>
+                                        <div class="questionOptions">
+                                            <table  class="optionTable">
+                                                <tr>
+                                                <td style="width:10px; vertical-align:top"></td>
+                                                <td style="width:10px; vertical-align:top"><input type="radio" id="optionAttrib4_1" name="optionAttribName4" value="1"  style="margin-top:3px" /></td>
+                                                <td ><label for="optionAttrib4_1">&nbsp;&nbsp;1951609&nbsp;</label></td>
+                                                </tr>
+                                                <tr>
+                                                <td style="vertical-align:top"></td>
+                                                <td style="vertical-align:top"><input type="radio" id="optionAttrib4_2" name="optionAttribName4" value="2"  style="margin-top:3px" /></td>
+                                                <td style="vertical-align:top"><label for="optionAttrib4_2">&nbsp;&nbsp;1981709&nbsp;</label></td>
+                                                </tr>
+                                                <tr>
+                                                <td style="vertical-align:top"></td>
+                                                <td style="vertical-align:top"><input type="radio" id="optionAttrib4_3" name="optionAttribName4" value="3"  style="margin-top:3px" /></td>
+                                                <td style="vertical-align:top"><label for="optionAttrib4_3">&nbsp;&nbsp;18362619&nbsp;</label></td> 
+                                                </tr>
+                                                <tr>
+                                                <td style="vertical-align:top"></td>
+                                                <td style="vertical-align:top"><input type="radio" id="optionAttrib4_4" name="optionAttribName4" value="4"  style="margin-top:3px" /></td>
+                                                <td style="vertical-align:top"><label for="optionAttrib4_4">&nbsp;&nbsp;2031719</label></td>
+                                                </tr>
+                                            </table>
+                                        </div>
+                                    </div>
+                                    <div style="clear:both"></div>
+                                </div>
+                                <div class="questionFooter">
+                                    <center>
+                                    <span class="section_btn section_normal"><a href="javascript:void(0)" onClick="setAttemptQuestion(4,4,1,-1)">Save & Prev</a></span>         
+                                    <span class="section_btn sc-button-gray"><a href="javascript:void(0)" onClick="clearResponse(4,1)">Clear Response</a></span>
+                                    <span class=" savenext section_btn section_normal  "> <a href="javascript:void(0)" onClick="setAttemptQuestion(4,4,1,1);$('#topbarcheck').focus()">Save & Next</a></span>
+                                    </center>
+                                </div>
+                            </div>
+                            
+                            <!--q5-->
+                            <div class="questionDisplay" id="question5"  style="display:none" >
+                                
+                                <div class="sectionQuestion"> <span class="question">5: The speed of a boat in still water in 15 km/hr and the rate of current is 3 km/hr. The distance travelled downstream in 12 minutes is:</span>
+                                    <div style="clear:both"></div>
+                                </div>
+                                <div class="questionDetails">
+                                    <div>
+                                        <div style='padding:3px'></div>                            
+                                        <div style="clear:both"></div>
+                                        <div class="questionOptions">
+                                            <table  class="optionTable">
+                                                <tr>
+                                                <td style="width:10px; vertical-align:top"></td>
+                                                <td style="width:10px; vertical-align:top"><input type="radio" id="optionAttrib5_1" name="optionAttribName5" value="1"  style="margin-top:3px" /></td>
+                                                <td ><label for="optionAttrib5_1">&nbsp;&nbsp;1.2 km&nbsp;</label></td>
+                                                </tr>
+                                                <tr>
+                                                <td style="vertical-align:top"></td>
+                                                <td style="vertical-align:top"><input type="radio" id="optionAttrib5_2" name="optionAttribName5" value="2"  style="margin-top:3px" /></td>
+                                                <td style="vertical-align:top"><label for="optionAttrib5_2">&nbsp;&nbsp;1.8 km&nbsp;</label></td>
+                                                </tr>
+                                                <tr>
+                                                <td style="vertical-align:top"></td>
+                                                <td style="vertical-align:top"><input type="radio" id="optionAttrib5_3" name="optionAttribName5" value="3"  style="margin-top:3px" /></td>
+                                                <td style="vertical-align:top"><label for="optionAttrib5_3">&nbsp;&nbsp;2.4 km&nbsp;</label></td> 
+                                                </tr>
+                                                <tr>
+                                                <td style="vertical-align:top"></td>
+                                                <td style="vertical-align:top"><input type="radio" id="optionAttrib5_4" name="optionAttribName5" value="4"  style="margin-top:3px" /></td>
+                                                <td style="vertical-align:top"><label for="optionAttrib5_4">&nbsp;&nbsp;3.6 km</label></td>
+                                                </tr>
+                                            </table>
+                                        </div>
+                                    </div>
+                                    <div style="clear:both"></div>
+                                </div>
+                                <div class="questionFooter">
+                                    <center>
+                                    <span class="section_btn section_normal"><a href="javascript:void(0)" onClick="setAttemptQuestion(5,4,1,-1)">Save & Prev</a></span>         
+                                    <span class="section_btn sc-button-gray"><a href="javascript:void(0)" onClick="clearResponse(5,1)">Clear Response</a></span>
+                                    <span class=" savenext section_btn section_normal  "> <a href="javascript:void(0)" onClick="setAttemptQuestion(5,4,1,1);$('#topbarcheck').focus()">Save & Next</a></span>
+                                    </center>
+                                </div>
+                            </div>
+                            
+                            <!--q6-->
+                            <div class="questionDisplay" id="question6"  style="display:none" >
+                                
+                                <div class="sectionQuestion"> <span class="question">6: A person crosses a 600 m long street in 5 minutes. What is his speed in km per hour?</span>
+                                    <div style="clear:both"></div>
+                                </div>
+                                <div class="questionDetails">
+                                    <div>
+                                        <div style='padding:3px'></div>                            
+                                        <div style="clear:both"></div>
+                                        <div class="questionOptions">
+                                            <table  class="optionTable">
+                                                <tr>
+                                                <td style="width:10px; vertical-align:top"></td>
+                                                <td style="width:10px; vertical-align:top"><input type="radio" id="optionAttrib6_1" name="optionAttribName6" value="1"  style="margin-top:3px" /></td>
+                                                <td ><label for="optionAttrib6_1">&nbsp;&nbsp;3.6&nbsp;</label></td>
+                                                </tr>
+                                                <tr>
+                                                <td style="vertical-align:top"></td>
+                                                <td style="vertical-align:top"><input type="radio" id="optionAttrib6_2" name="optionAttribName6" value="2"  style="margin-top:3px" /></td>
+                                                <td style="vertical-align:top"><label for="optionAttrib6_2">&nbsp;&nbsp;7.2&nbsp;</label></td>
+                                                </tr>
+                                                <tr>
+                                                <td style="vertical-align:top"></td>
+                                                <td style="vertical-align:top"><input type="radio" id="optionAttrib6_3" name="optionAttribName6" value="3"  style="margin-top:3px" /></td>
+                                                <td style="vertical-align:top"><label for="optionAttrib6_3">&nbsp;&nbsp;8.4&nbsp;</label></td> 
+                                                </tr>
+                                                <tr>
+                                                <td style="vertical-align:top"></td>
+                                                <td style="vertical-align:top"><input type="radio" id="optionAttrib6_4" name="optionAttribName6" value="4"  style="margin-top:3px" /></td>
+                                                <td style="vertical-align:top"><label for="optionAttrib6_4">&nbsp;&nbsp;10</label></td>
+                                                </tr>
+                                            </table>
+                                        </div>
+                                    </div>
+                                    <div style="clear:both"></div>
+                                </div>
+                                <div class="questionFooter">
+                                    <center>
+                                    <span class="section_btn section_normal"><a href="javascript:void(0)" onClick="setAttemptQuestion(6,4,1,-1)">Save & Prev</a></span>         
+                                    <span class="section_btn sc-button-gray"><a href="javascript:void(0)" onClick="clearResponse(6,1)">Clear Response</a></span>
+                                    <span class=" savenext section_btn section_normal  "> <a href="javascript:void(0)" onClick="setAttemptQuestion(6,4,1,1);$('#topbarcheck').focus()">Save & Next</a></span>
+                                    </center>
+                                </div>
+                            </div>
+                            
+                            <!--q7-->
+                            <div class="questionDisplay" id="question7"  style="display:none" >
+                                
+                                <div class="sectionQuestion"> <span class="question">7: If a person walks at 14 km/hr instead of 10 km/hr, he would have walked 20 km more. The actual distance travelled by him is:</span>
+                                    <div style="clear:both"></div>
+                                </div>
+                                <div class="questionDetails">
+                                    <div>
+                                        <div style='padding:3px'></div>                            
+                                        <div style="clear:both"></div>
+                                        <div class="questionOptions">
+                                            <table  class="optionTable">
+                                                <tr>
+                                                <td style="width:10px; vertical-align:top"></td>
+                                                <td style="width:10px; vertical-align:top"><input type="radio" id="optionAttrib7_1" name="optionAttribName7" value="1"  style="margin-top:3px" /></td>
+                                                <td ><label for="optionAttrib7_1">&nbsp;&nbsp;50 km&nbsp;</label></td>
+                                                </tr>
+                                                <tr>
+                                                <td style="vertical-align:top"></td>
+                                                <td style="vertical-align:top"><input type="radio" id="optionAttrib7_2" name="optionAttribName7" value="2"  style="margin-top:3px" /></td>
+                                                <td style="vertical-align:top"><label for="optionAttrib7_2">&nbsp;&nbsp;56 km&nbsp;</label></td>
+                                                </tr>
+                                                <tr>
+                                                <td style="vertical-align:top"></td>
+                                                <td style="vertical-align:top"><input type="radio" id="optionAttrib7_3" name="optionAttribName7" value="3"  style="margin-top:3px" /></td>
+                                                <td style="vertical-align:top"><label for="optionAttrib7_3">&nbsp;&nbsp;70 km&nbsp;</label></td> 
+                                                </tr>
+                                                <tr>
+                                                <td style="vertical-align:top"></td>
+                                                <td style="vertical-align:top"><input type="radio" id="optionAttrib7_4" name="optionAttribName7" value="4"  style="margin-top:3px" /></td>
+                                                <td style="vertical-align:top"><label for="optionAttrib7_4">&nbsp;&nbsp;80 km</label></td>
+                                                </tr>
+                                            </table>
+                                        </div>
+                                    </div>
+                                    <div style="clear:both"></div>
+                                </div>
+                                <div class="questionFooter">
+                                    <center>
+                                    <span class="section_btn section_normal"><a href="javascript:void(0)" onClick="setAttemptQuestion(7,4,1,-1)">Save & Prev</a></span>         
+                                    <span class="section_btn sc-button-gray"><a href="javascript:void(0)" onClick="clearResponse(7,1)">Clear Response</a></span>
+                                    <span class=" savenext section_btn section_normal  "> <a href="javascript:void(0)" onClick="setAttemptQuestion(7,4,1,1);$('#topbarcheck').focus()">Save & Next</a></span>
+                                    </center>
+                                </div>
+                            </div>
+                            
+                            <!--q8-->
+                            <div class="questionDisplay" id="question8"  style="display:none" >
+                                
+                                <div class="sectionQuestion"> <span class="question">8: A, B and C can do a piece of work in 20, 30 and 60 days respectively. In how many days can A do the work if he is assisted by B and C on every third day?</span>
+                                    <div style="clear:both"></div>
+                                </div>
+                                <div class="questionDetails">
+                                    <div>
+                                        <div style='padding:3px'></div>                            
+                                        <div style="clear:both"></div>
+                                        <div class="questionOptions">
+                                            <table  class="optionTable">
+                                                <tr>
+                                                <td style="width:10px; vertical-align:top"></td>
+                                                <td style="width:10px; vertical-align:top"><input type="radio" id="optionAttrib8_1" name="optionAttribName8" value="1"  style="margin-top:3px" /></td>
+                                                <td ><label for="optionAttrib8_1">&nbsp;&nbsp;12 days&nbsp;</label></td>
+                                                </tr>
+                                                <tr>
+                                                <td style="vertical-align:top"></td>
+                                                <td style="vertical-align:top"><input type="radio" id="optionAttrib8_2" name="optionAttribName8" value="2"  style="margin-top:3px" /></td>
+                                                <td style="vertical-align:top"><label for="optionAttrib8_2">&nbsp;&nbsp;15 days&nbsp;</label></td>
+                                                </tr>
+                                                <tr>
+                                                <td style="vertical-align:top"></td>
+                                                <td style="vertical-align:top"><input type="radio" id="optionAttrib8_3" name="optionAttribName8" value="3"  style="margin-top:3px" /></td>
+                                                <td style="vertical-align:top"><label for="optionAttrib8_3">&nbsp;&nbsp;16 days&nbsp;</label></td> 
+                                                </tr>
+                                                <tr>
+                                                <td style="vertical-align:top"></td>
+                                                <td style="vertical-align:top"><input type="radio" id="optionAttrib8_4" name="optionAttribName8" value="4"  style="margin-top:3px" /></td>
+                                                <td style="vertical-align:top"><label for="optionAttrib8_4">&nbsp;&nbsp;18 days	</label></td>
+                                                </tr>
+                                            </table>
+                                        </div>
+                                    </div>
+                                    <div style="clear:both"></div>
+                                </div>
+                                <div class="questionFooter">
+                                    <center>
+                                    <span class="section_btn section_normal"><a href="javascript:void(0)" onClick="setAttemptQuestion(8,4,1,-1)">Save & Prev</a></span>         
+                                    <span class="section_btn sc-button-gray"><a href="javascript:void(0)" onClick="clearResponse(8,1)">Clear Response</a></span>
+                                    <span class=" savenext section_btn section_normal  "> <a href="javascript:void(0)" onClick="setAttemptQuestion(8,4,1,1);$('#topbarcheck').focus()">Save & Next</a></span>
+                                    </center>
+                                </div>
+                            </div>
+                            
+                            <!--q9-->
+                            <div class="questionDisplay" id="question9"  style="display:none" >
+                                
+                                <div class="sectionQuestion"> <span class="question">9: A can do a piece of work in 4 hours; B and C together can do it in 3 hours, while A and C together can do it in 2 hours. How long will B alone take to do it?</span>
+                                    <div style="clear:both"></div>
+                                </div>
+                                <div class="questionDetails">
+                                    <div>
+                                        <div style='padding:3px'></div>                            
+                                        <div style="clear:both"></div>
+                                        <div class="questionOptions">
+                                            <table  class="optionTable">
+                                                <tr>
+                                                <td style="width:10px; vertical-align:top"></td>
+                                                <td style="width:10px; vertical-align:top"><input type="radio" id="optionAttrib9_1" name="optionAttribName9" value="1"  style="margin-top:3px" /></td>
+                                                <td ><label for="optionAttrib9_1">&nbsp;&nbsp;8 hours&nbsp;</label></td>
+                                                </tr>
+                                                <tr>
+                                                <td style="vertical-align:top"></td>
+                                                <td style="vertical-align:top"><input type="radio" id="optionAttrib9_2" name="optionAttribName9" value="2"  style="margin-top:3px" /></td>
+                                                <td style="vertical-align:top"><label for="optionAttrib9_2">&nbsp;&nbsp;10 hours&nbsp;</label></td>
+                                                </tr>
+                                                <tr>
+                                                <td style="vertical-align:top"></td>
+                                                <td style="vertical-align:top"><input type="radio" id="optionAttrib9_3" name="optionAttribName9" value="3"  style="margin-top:3px" /></td>
+                                                <td style="vertical-align:top"><label for="optionAttrib9_3">&nbsp;&nbsp;12 hours&nbsp;</label></td> 
+                                                </tr>
+                                                <tr>
+                                                <td style="vertical-align:top"></td>
+                                                <td style="vertical-align:top"><input type="radio" id="optionAttrib9_4" name="optionAttribName9" value="4"  style="margin-top:3px" /></td>
+                                                <td style="vertical-align:top"><label for="optionAttrib9_4">&nbsp;&nbsp;24 hours</label></td>
+                                                </tr>
+                                            </table>
+                                        </div>
+                                    </div>
+                                    <div style="clear:both"></div>
+                                </div>
+                                <div class="questionFooter">
+                                    <center>
+                                    <span class="section_btn section_normal"><a href="javascript:void(0)" onClick="setAttemptQuestion(9,4,1,-1)">Save & Prev</a></span>         
+                                    <span class="section_btn sc-button-gray"><a href="javascript:void(0)" onClick="clearResponse(9,1)">Clear Response</a></span>
+                                    <span class=" savenext section_btn section_normal  "> <a href="javascript:void(0)" onClick="setAttemptQuestion(9,4,1,1);$('#topbarcheck').focus()">Save & Next</a></span>
+                                    </center>
+                                </div>
+                            </div>
+                            
+                            
+              
+                            <!--q10-->
+                            <div class="questionDisplay" id="question10"  style="display:none" >
+                                
+                                <div class="sectionQuestion"> <span class="question">10: A boat can travel with a speed of 13 km/hr in still water. If the speed of the stream is 4 km/hr, find the time taken by the boat to go 68 km downstream.</span>
+                                    <div style="clear:both"></div>
+                                </div>
+                                <div class="questionDetails">
+                                    <div>
+                                        <div style='padding:3px'></div>                            
+                                        <div style="clear:both"></div>
+                                        <div class="questionOptions">
+                                            <table  class="optionTable">
+                                                <tr>
+                                                <td style="width:10px; vertical-align:top"></td>
+                                                <td style="width:10px; vertical-align:top"><input type="radio" id="optionAttrib10_1" name="optionAttribName10" value="1"  style="margin-top:3px" /></td>
+                                                <td ><label for="optionAttrib10_1">&nbsp;&nbsp;2 hours&nbsp;</label></td>
+                                                </tr>
+                                                <tr>
+                                                <td style="vertical-align:top"></td>
+                                                <td style="vertical-align:top"><input type="radio" id="optionAttrib10_2" name="optionAttribName10" value="2"  style="margin-top:3px" /></td>
+                                                <td style="vertical-align:top"><label for="optionAttrib10_2">&nbsp;&nbsp;3 hours&nbsp;</label></td>
+                                                </tr>
+                                                <tr>
+                                                <td style="vertical-align:top"></td>
+                                                <td style="vertical-align:top"><input type="radio" id="optionAttrib10_3" name="optionAttribName10" value="3"  style="margin-top:3px" /></td>
+                                                <td style="vertical-align:top"><label for="optionAttrib10_3">&nbsp;&nbsp;4 hours&nbsp; </label></td>
+                                                </tr>
+                                                <tr>
+                                                <td style="vertical-align:top"></td>
+                                                <td style="vertical-align:top"><input type="radio" id="optionAttrib10_4" name="optionAttribName10" value="4"  style="margin-top:3px" /></td>
+                                                <td style="vertical-align:top"><label for="optionAttrib10_4">&nbsp;&nbsp;5 hours</label></td>
+                                                </tr>
+                                            </table>
+                                        </div>
+                                    </div>
+                                    <div style="clear:both"></div>
+                                </div>
+                                <div class="questionFooter">
+                                    <center>
+                                    <span class="section_btn section_normal"><a href="javascript:void(0)" onClick="setAttemptQuestion(10,4,1,-1)">Save & Prev</a></span>
+                                    <span class="section_btn sc-button-gray"><a href="javascript:void(0)" onClick="clearResponse(10,1)">Clear Response</a></span>
+                                    <span class="section_btn section_normal"> <a href="javascript:void(0)" onClick="submitAns()" onClick="submitTest(this,10,4,1)" ">Save & Submit Test</a></span>
+                                    </center>
+                                </div>
+                            </div>
+
+                        </form>
+
+                <!--///////////////////////Middle Part Ends////////////////////////////////////-->
+     
+                    </div>
+	                <div>
+                        <aside class="col-3 sidebar" style="padding-right:10px; padding-left:10px; padding-top: 75px; height: 300px;">
+  
+                            <div class="sections" id="questionIndexPart">
+	 					        <div class="answered" id="statusQuestionIndex1" onClick="showQuestion(1)">1</div>
+			 			        <div class="notVisited" id="statusQuestionIndex2" onClick="showQuestion(2)">2</div>
+					 	        <div class="notVisited" id="statusQuestionIndex3" onClick="showQuestion(3)">3</div>
+					 	        <div class="notVisited" id="statusQuestionIndex4" onClick="showQuestion(4)">4</div>
+					 	        <div class="notVisited" id="statusQuestionIndex5" onClick="showQuestion(5)">5</div>                                              
+			                	<div class="notVisited" id="statusQuestionIndex6" onClick="showQuestion(6)">6</div>
+			 			        <div class="notVisited" id="statusQuestionIndex7" onClick="showQuestion(7)">7</div>
+					 	        <div class="notVisited" id="statusQuestionIndex8" onClick="showQuestion(8)">8</div>
+					 	        <div class="notVisited" id="statusQuestionIndex9" onClick="showQuestion(9)">9</div>
+					 	        <div class="notVisited" id="statusQuestionIndex10" onClick="showQuestion(10)">10</div>                                              
+			                
+			                </div> 
+                        </aside>
+	                </div>
+                </div><!-- .row -->   
+            </div><!-- .main -->   
+        </div><!-- .main-wrap -->
+</div><!--id=container ends-->
+
+<center>
+<form action=jsp-qa-report.jsp>
+	<div id="result" style="visibility: hidden;">
+		<h3 style="font-size:25px; font-weight:bold;">Quantitative Aptitude</h3>
+		<h4 style="font-size:22px; font-weight:bold;">Total Questions : 10</h4>
+		<h4 style="font-size:22px; font-weight:bold;">Time Limit      : 15 min</h4>
+		<h4 style="font-size:22px; font-weight:bold;">Total Score     : 10</h4>
+		
+		<label style="font-size:22px; font-weight:bold; padding-left:140px;">Your Mark </label>   												  :
+		<input type="text" id="results" name="results" >
+				
+	</div>
+	<div id="report" style="visibility: hidden;">              	
+        	<input type="submit" value="Answer Key" id="key">
+    	        
+	</div>
+</form>  
+</center> 
+
+
+
+
+
+
+
+</body>
+</html>

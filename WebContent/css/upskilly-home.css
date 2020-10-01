@@ -1,0 +1,247 @@
+@charset "ISO-8859-1";
+@media (max-width: 800px) {
+  html,body
+  {
+      width: 100%;
+      height: auto;
+      margin: 0px;
+      padding: 0px;
+      overflow-x: hidden;
+  }
+}
+
+a.inactive:hover {
+  color: black;
+  cursor: default;
+}
+
+@media (min-width: 801px) {
+  body
+  {
+      width: 100%;
+      height: 100%;
+      margin: 0px;
+      padding: 0px;
+      overflow-x: hidden;
+  }
+}
+
+@media (max-width: 1200px) {
+    .navbar-header {
+        float: none;
+    }
+    .navbar-left,.navbar-right {
+        float: none !important;
+    }
+    .navbar-toggle {
+        display: block;
+    }
+    .navbar-collapse {
+        border-top: 1px solid transparent;
+        box-shadow: inset 0 1px 0 rgba(255,255,255,0.1);
+    }
+    .navbar-fixed-top {
+        top: 0;
+        border-width: 0 0 1px;
+    }
+    .navbar-collapse.collapse {
+        display: none!important;
+    }
+    .navbar-nav {
+        float: none!important;
+        margin-top: 7.5px;
+    }
+    .navbar-nav>li {
+        float: none;
+    }
+    .navbar-nav>li>a {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    .collapse.in{
+        display:block !important;
+    }
+}
+
+.navbar {
+  margin-bottom: 0;
+}
+
+.navbarElements {
+  font-size: 120%;
+  color: black;
+  margin-top: 0.7%;
+  font-family: "Cabin", Helvetica, Arial, serif;
+}
+
+#start{
+  -webkit-transition: background 1s ease-out;  
+  -moz-transition: background 1s ease-out;  
+  -o-transition: background 1s ease-out;  
+  transition: background 1s ease-out; 
+
+  background: -moz-linear-gradient(left,  #71fa84 0%, #fbd75c 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, right top, color-stop(0%,#f2b07e), color-stop(100%,#fbd75c)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(left,  #71fa84 0%,#fbd75c 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(left,  #71fa84 0%,#fbd75c 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(left,  #71fa84 0%,#fbd75c 100%); /* IE10+ */
+	background: linear-gradient(to right,  #71fa84 0%,#fbd75c 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f2b07e', endColorstr='#fbd75c',GradientType=1 ); /* IE6-9 */
+}
+.letsdoit {
+  margin-top: 10%;
+  margin-bottom: 5%;
+  padding-top: 3%;
+  padding-bottom: 3%;
+  width: 45%;
+  background-color: rgba(108, 191, 124, 1.0);
+  color: white;
+  font-family: "Cabin", Helvetica, Arial, serif;
+  border-radius: 2px;
+}
+
+.letsdoit:hover {
+  background-color: rgba(108, 191, 124, 1.0);
+  color: white;
+}
+
+@media (min-width: 801px) {
+  .letsdoit {
+    margin-left: 2%;
+  }
+}
+
+@media (max-width: 800px) {
+  .letsdoit {
+    margin-left: 24%;
+    padding-top: 4%;
+    padding-bottom: 4%;
+    width: 50%;
+  }
+}
+
+.letsdoit_text {
+  font-size: 125%;
+  margin:auto;
+}
+
+.footer {
+  background-color: rgba(33, 33, 33, 1.0);
+  width: 100%;
+  color: white;
+}
+
+.foot {
+  padding-top: 3%;
+  padding-bottom: 3%;
+}
+
+@media (max-width: 800px) {
+  #logo_white {
+    display: none;
+  }
+}
+
+@media (max-width: 800px) {
+  .foot .row .col-sm-12 {
+    padding-top: 5%;
+    padding-left: 20%;
+  }
+}
+
+.navbar-header img {
+  margin-top: -5%;
+}
+
+a {
+  color: white;
+}
+a:hover {
+  text-decoration: none;
+  color: rgba(108, 191, 124, 1.0);
+}
+
+.nav li a {
+  padding-left: 2.5em;
+  padding-right: 2.5em;
+}
+
+.navbar-default {
+  background-color: white;
+}
+
+.navhead {
+  margin-top: 0.5%;
+}
+
+.nav_git {
+  width: 100%;
+  border-radius: 0px;
+  background-color: rgba(108, 191, 124, 1.0);
+  color: white;
+  font-size: 115%;
+  margin-top: 5%;
+  padding-top: 4%;
+  padding-bottom: 4%;
+}
+
+.modal-header {
+  margin-top: 2%;
+  border-bottom: 0px;
+  font-family: "Cabin", Helvetica, Arial, serif;
+  font-size: 103%;
+}
+
+element.style {
+}
+.navbar-brand>img {
+    display: block;
+}
+img {
+    vertical-align: middle;
+}
+img {
+    border: 0;
+}
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.navbar-default .navbar-brand {
+    color: #777;
+}
+.navbar-brand {
+    float: left;
+    height: 50px;
+    padding: 15px 15px;
+    font-size: 18px;
+    line-height: 20px;
+}
+a {
+    color: #337ab7;
+    text-decoration: none;
+}
+user agent stylesheet
+a:-webkit-any-link {
+    color: -webkit-link;
+    cursor: pointer;
+}
+body {
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #333;
+    background-color: #fff;
+}
+html {
+    font-size: 10px;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+html {
+    font-family: sans-serif;
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+}
+
+

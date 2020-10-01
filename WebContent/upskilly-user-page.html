@@ -1,0 +1,145 @@
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, shrink-to-fit=no, initial-scale=1">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>Upskilly-User-Page</title>
+
+  <link rel="stylesheet" href="css\dash.css">
+  <link rel="stylesheet" href="css\admin.css">
+  
+  
+  
+  <link rel="stylesheet" href="css\upskilly-common.css"> 
+  <link rel="stylesheet" href="css\upskilly-bootstrap.min.css">
+      
+  
+</head>
+
+<body>
+
+    <nav class="navbar navbar-chalk" id="top_banner">
+        <div class="nav_container">
+        <a class="logo logo_enterprise pull-left">
+            <img src="images\footerlogo.png">
+        </a>
+            <div class="controls_wrapper">    
+                
+                <a class="fc4" href="index.html">Log Out</a>
+            </div>
+        </div>
+    </nav>
+
+  <div id="wrapper" class="">
+
+    <!-- Sidebar -->
+    <div id="sidebar-wrapper">
+      <ul class="sidebar-nav">
+        <li class="sidebar-brand">
+          <a href="#">MENU</a>
+        </li>
+        <li class="sidebar-title">
+          Home
+        </li>
+        <li>
+          <a href="#it1">Take Quiz</a>
+        </li>
+        <li>
+          <a href="#it2">View Scores</a>
+        </li>              
+        <li>
+          <a href="#it3">Change Username</a>
+        </li>
+        <li>
+          <a href="#it4">Change Password</a>
+        </li> 
+        <li>
+          <a href="index.html">Log Out</a>
+        </li>                           
+      </ul>
+    </div>
+    <!-- /#sidebar-wrapper -->
+
+    
+    <!-- Page Content -->
+    <div id="page-content-wrapper">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-lg-12">
+            
+           
+    
+    				<center><h3>Welcome User</h3></center>        
+              
+            
+                    <div id="it1" class="si_container bc4">   
+            			<b>Take Quiz</b>
+            			<form id="si_form" >             				                                                     			
+                 			<a href="upskilly-qa-page.html" style="font-size:20px; text-decoration:none;">
+                 			   Quantiative Aptitude
+                 			</a> 
+                 			<br> <br>  
+                 			<a href="upskilly-tech-page.html" style="font-size:20px; text-decoration:none;">
+                 			   Techical
+                 			</a>               			         
+            			</form>          			
+        			</div>
+        
+        			<div id="it2" class="si_container bc4">   
+           				<b>View all test scores</b>
+            			<form id="si_form" action="jsp-view.jsp">
+               			<br>              
+                			<input class="btn-1" type="submit" value=" View Scores ">
+            			</form>
+        			</div>
+                   
+                    <div id="it3" class="si_container bc4">   
+                      <b>Change Your Username</b>
+                       <form id="si_form" action="jsp-user-changeusername.jsp">
+                           <br>
+                           <input id="username" type="text" name="username" placeholder="username">
+                           <br><br>                            
+                           <input id="username1" type="text" name="newusername" placeholder="new username">
+                           <br><br>
+                           <input id="username12" type="text" name="conusername" placeholder="confirm username">
+                           <br><br>
+                           <input class="btn-1" type="submit" value="Change Username">	            
+                       </form>           
+                   </div>
+                   
+                   <div id="it4" class="si_container bc4">   
+                       <b>Change Your Password</b>
+                       <form id="si_form" action="jsp-user-changepass.jsp">
+                           <br>	                           
+                           <input id="password" type="password" name="password" placeholder="password">
+                           <br><br>                             
+                           <input id="password1" type="password" name="newpassword" placeholder="new password">
+                           <br><br>
+                           <input id="password2" type="password" name="conpassword" placeholder="confirm password">
+                           <br><br>
+                           <input class="btn-1" type="submit" value="Change Password">	            
+                       </form>           
+                   </div>
+                                           
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                              
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+  
+</body>
+
+</html>
